@@ -1,0 +1,19 @@
+{
+  "name": "ang2cli",
+  "version": "1.0.0",
+  "description": "Light weight angular2 generator cli",
+  "main": "index.js",
+  "author": "Lyle Dippo",
+  "license": "MIT",
+  "bin": {
+    "ang2": "./index.js"
+  },
+  "dependencies": {
+    "co": "^4.6.0",
+    "co-prompt": "^1.0.0",
+    "commander": "^2.9.0",
+    "dedent-js": "^1.0.1",
+    "install": "^0.4.1",
+    "npm": "^3.5.3"
+  }
+}
