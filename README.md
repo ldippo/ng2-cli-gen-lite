@@ -26,12 +26,65 @@ Generate a component
 
 Result: TS, SCSS, HTML
 
+TS Result
+```ts
+import{Component} from 'angular2/core';            
+
+@Component({
+templateUrl: '',
+styles:[],
+providers:[],
+directives:[]
+})
+
+exports class Testcomponent {
+
+constructor(){}
+    
+}
+```
+
+SCSS Result
+```scss
+#testcomponent{
+    
+}
+```
+
+HTML Result
+```html
+<testcomponent></testcomponent>
+```
+
+
 Generate a directive
 <code>ang2 filename -d</code>
 
-Result: TS
+TS Result
+```ts
+import{Directive, Injectable} from 'angular2/core';
+@Directive({
+    
+})
+
+@Injectable()
+exports class testdirective {
+    
+}
+```
 
 Generate a pipe
 <code>ang2 filename -p</code>
 
-Result: TS
+TS Result
+```ts
+import{Pipe} from 'angular2/core';
+
+@Pipe({
+    name: 'testpipe'
+})
+ 
+export class TestpipePipe {
+    
+}
+```
