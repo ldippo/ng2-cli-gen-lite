@@ -10,7 +10,7 @@ module.exports = function(params) {
             directives:[]
             })
             
-            exports class ${ capitilize(params.name) } {
+            export class ${ capitilize(params.name) } {
             
             constructor(){}
                 
@@ -27,7 +27,7 @@ module.exports = function(params) {
             })
             
             @Injectable()
-            exports class ${ params.name } {
+            export class ${ params.name } {
                 
             }`,
     },
