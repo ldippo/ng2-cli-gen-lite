@@ -4,10 +4,12 @@ module.exports = function(params) {
       ts:  `import{Component} from 'angular2/core';            
             
             @Component({
+            selector: '${ params.name }',
             templateUrl: '',
             styles:[],
             providers:[],
-            directives:[]
+            directives:[],
+            pipes:[]
             })
             
             export class ${ capitilize(params.name) } {
@@ -23,7 +25,7 @@ module.exports = function(params) {
     directive: {
         ts: `import{Directive, Injectable} from 'angular2/core';
             @Directive({
-                
+                selector: '${ params.name }'
             })
             
             @Injectable()
