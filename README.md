@@ -37,7 +37,7 @@ providers:[],
 directives:[]
 })
 
-exports class Testcomponent {
+export class Testcomponent {
 
 constructor(){}
     
@@ -68,7 +68,7 @@ import{Directive, Injectable} from 'angular2/core';
 })
 
 @Injectable()
-exports class testdirective {
+export class testdirective {
     
 }
 ```
